@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style-main.css">
+  <script src="./scripts/dark-mode.js" defer></script>
+  <script src="./scripts/preload.js" defer></script>
+  <script src="./scripts/card-buttons.js" defer></script>
+</head>
+<body class="preload">
+  <div class="body">
+    <div id="app">
+      <div id="navbar">
+        <div class="item">
+          <h1>Dashboard</h1>
+          <div class="icon" id="dashboard"></div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item"></div>
+        <div class="item">
+          <div class="icon" id="home"></div>
+          <div class="text">Home</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item">
+          <div class="icon fade-up" id="profile"></div>
+          <div class="text">Profile</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item">
+          <div class="icon" id="messages"></div>
+          <div class="text">Messages</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item">
+          <div class="icon" id="history"></div>
+          <div class="text">History</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item">
+          <div class="icon" id="tasks"></div>
+          <div class="text">Tasks</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item">
+          <div class="icon" id="communities"></div>
+          <div class="text">Communities</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item"></div>
+        <div class="item">
+          <div class="icon" id="settings"></div>
+          <div class="text">Settings</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item">
+          <div class="icon" id="support"></div>
+          <div class="text">Support</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item">
+          <div class="icon" id="privacy"></div>
+          <div class="text">Privacy</div>
+          <a class="link" href="#"></a>
+        </div>
+        <div class="item"></div>
+        <div class="item">
+          <div class="icon" id="theme"></div>
+          <div class="text">Theme</div>
+          <a class="link" id="theme-button" href="#"></a>
+        </div>
+        <div class="item" id="credits">
+          <div class="icon" id="github"></div>
+          <div class="text">Made by: Luis Hernandez Coding</div>
+          <a class="link" id="theme-button" href="https://github.com/LuisHernandezCoding"></a>
+        </div>
+      </div>
+      <div id="main">
+        <div id="title-bar">
+          <div id="empty_l"></div>
+          <div class="icon" id="search_icon"></div>
+          <div id="search_bar">
+            <input type="text" placeholder="Search">
+          </div>
+          <div id="empty_m"></div>
+          <div class="icon" id="alarm_icon"></div>
+          <div class="avatar" id="user_icon_s"></div>
+          <div id="user_name_s">Luis Hernandez</div>
+          <div class="avatar" id="user_icon_l"></div>
+          <div id="user_name_l">
+            <h4 class="greetings">Hi there!</h4>
+            <h3 class="name">Luis Hernandez (@LuisHernandezCoding)</h3>
+          </div>
+          <button class="btn" id="btn_new">
+            <div class="btn_new_icon"></div>
+            <div class="btn_new_text">New</div>
+          </button>
+          <button class="btn" id="btn_up">
+            <div class="btn_up_icon"></div>
+            <div class="btn_up_text">Upload</div>
+          </button>
+          <button class="btn" id="btn_share">
+            <div class="btn_down_icon"></div>
+            <div class="btn_down_text">Share</div>
+          </button>
+          <div id="empty_r"></div>
+        </div>
+        <div id="content">
+          <div id="title_cards">Your Projects</div>
+          <div id="cards">
+            <div id="card">
+              <div class="card_title">Super Cool Project</div>
+              <div class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</div>
+              <button class="card_btn" id="btn_favorite"></button>
+              <button class="card_btn filled" id="btn_watch"></button>
+              <button class="card_btn filled" id="btn_share"></button>
+            </div>
+            <div id="card">
+              <div class="card_title">Less Cool project</div>
+              <div class="card_description">Nullam condimentum ipsum ut lectus vehicula, vitae aliquet nisl aliquam pellentesque lactus.</div>
+              <button class="card_btn filled" id="btn_favorite"></button>
+              <button class="card_btn filled" id="btn_watch"></button>
+              <button class="card_btn" id="btn_share"></button>
+            </div>
+            <div id="card">
+              <div class="card_title">Impossible app</div>
+              <div class="card_description">In hac habitasse platea dictumst. Vivamus auctor, nisl eget ultricies tincidunt, nisl.</div>
+              <button class="card_btn filled" id="btn_favorite"></button>
+              <button class="card_btn" id="btn_watch"></button>
+              <button class="card_btn" id="btn_share"></button>
+            </div>
+            <div id="card">
+              <div class="card_title">Easy Peasy App</div>
+              <div class="card_description">Etiam cursus eros ac efficitur fringilla. vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</div>
+              <button class="card_btn" id="btn_favorite"></button>
+              <button class="card_btn" id="btn_watch"></button>
+              <button class="card_btn filled" id="btn_share"></button>
+            </div>
+            <div id="card">
+              <div class="card_title">Ad Blocker</div>
+              <div class="card_description">Quisqe eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra ultricies. alquam sed malesuada eros.</div>
+              <button class="card_btn" id="btn_favorite"></button>
+              <button class="card_btn filled" id="btn_watch"></button>
+              <button class="card_btn" id="btn_share"></button>
+            </div>
+            <div id="card">
+              <div class="card_title">Money Maker</div>
+              <div class="card_description">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</div>
+              <button class="card_btn filled" id="btn_favorite"></button>
+              <button class="card_btn" id="btn_watch"></button>
+              <button class="card_btn filled" id="btn_share"></button>
+            </div>
+          </div>
+          <div id="title_sidebar">Announcements</div>
+          <div id="sidebar">
+            <div id="announcements" class="panel">
+              <div class="panel_title">Site Maintenance</div>
+              <div class="panel_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</div>
+              <div></div>
+              <div class="panel_title">Community Share Day</div>
+              <div class="panel_description">Nullam condimentum ipsum ut lectus vehicula, vitae aliquet nisl aliquam pellentesque lactus.</div>
+              <div></div>
+              <div class="panel_title">Updated Privacy Policy</div>
+              <div class="panel_description">In hac habitasse platea dictumst. Vivamus auctor, nisl eget ultricies tincidunt, nisl.</div>
+            </div>
+            <div id="title_trending">Trending</div>
+            <div id="trending" class="panel">
+              <div class="avatar" id="mossy"></div>
+              <div class="panel_title">@mossywinters</div>
+              <div class="panel_description">Most Popular</div>
+              <div class="avatar" id="maury"></div>
+              <div class="panel_title">@mauryorc</div>
+              <div class="panel_description">Hyper Bouncy Ball</div>
+              <div class="avatar" id="kelsy"></div>
+              <div class="panel_title">@kelsykel</div>
+              <div class="panel_description">Fierce Feline</div>
+              <div class="avatar" id="lucy"></div>
+              <div class="panel_title">@lucyfears</div>
+              <div class="panel_description">Cutest Squirrel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
